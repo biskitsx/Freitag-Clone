@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    /* background-color: antiquewhite; */
+}
+
+
+nav {
+    height: 50px;
+    background-color: #000;
+    /* border: 1px solid red; */
+}
+nav .container {
+    display: grid;
+    place-items: center;
+    /* border: 1px solid red; */
+    height: 100%;
+    /* text-align: center; */
+}
+
+nav .container img {
+    /* border: 1px solid red; */
+    height: 50px;
+}
+
+/* main part */
+.main {
+    /* border:  1px solid red; */
+    display: grid;
+    place-items: center;
+    /* height: 300px; */
+    padding: 2rem 0;
+
+}
+
+.main .container { 
+    letter-spacing: 0.75px;
+}
+.main .container p {
+    margin: 1rem 0;
+}
+
+.main .container h3 {
+    font-size: 3.5rem;
+}
+.main .container h4 {
+    font-size: 2.5rem;
+}
+
+.main .container p span {
+    font-weight: 800;
+}
+
+
+.grid-item .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.bag img {
+   width: 100%;
+    transition: 100ms ease-in-out;
+   cursor: pointer;
+}
+
+.bag img:hover {
+    transform: scale(1.03);
+}
+
+.bag h3 {
+    font-size: 1.75rem;
+}
+.bag h3:hover {
+    text-decoration:underline;
+}
+
+.bag {
+    margin: 0 0 2rem 0;
+}
+
+/* genuine Part */
+.genuine {
+    padding: 2rem 0;
+}
+
+.genuine .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.genuine .container img {
+    width: 100%;
+    transition: 100ms ease-in-out;
+
+}
+
+.genuine .container img:hover {
+    transform: scale(1.03);
+}
+
+.genuine h3 {
+    font-size: 2rem;
+}
+
+.genuine p {
+    font-weight: 500;
+}
+
+.genuine-area p{
+    padding: 1rem 0;
+}
+
+.genuine-area button {
+    padding: 0.9rem;
+    border: none;
+    font-size: 1.2rem;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    .grid-item .container {
+        grid-template-columns: 1fr; 
+    }
+    .main .container h3 {
+        font-size: 2rem;
+    }
+    .main .container h4 {
+        font-size: 1.5rem;
+    }
+}
