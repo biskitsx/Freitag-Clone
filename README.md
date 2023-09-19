@@ -1,2 +1,3 @@
-# freitage web application (Clone)
-React JS
+# Freitag Clone 🎒
+
+This project is a simplified front end clone of Freitag.
