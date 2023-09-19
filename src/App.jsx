@@ -4,14 +4,10 @@ import Bag from './components/Bag'
 import item from './data'
 
 function App() {
-    const bags = item.map((bag,index)=> {
-        return <Bag key={index} picture={bag.picture} name={bag.name} info={bag.info}/>
+    const bags = item.map((bag, index) => {
+        return <Bag key={index} picture={bag.picture} name={bag.name} info={bag.info} />
     })
-
-    const geniuePic = "https://freitag.rokka.io/freitag_1224_689_2x_focal_scale_crop/6304866fa83bf767f25048106cbe0d6e18bd08cb/storelocator-mood.jpg?h=84071268&itok=YDSfe6-i" ;
-
-    console.log(bags);
-
+    const geniuePic = "https://freitag.rokka.io/freitag_1224_689_2x_focal_scale_crop/6304866fa83bf767f25048106cbe0d6e18bd08cb/storelocator-mood.jpg?h=84071268&itok=YDSfe6-i";
     return (
         <>
             <nav>
@@ -47,7 +43,7 @@ function App() {
 
                 </div>
             </div>
-                        {/* <p>Sign up now for the FREITAG newsletter and, as a personal friend of the brand, be the first to know about unique bags and innovative materials and get lots of love from the F‑Crew.</p> */}
+            {/* <p>Sign up now for the FREITAG newsletter and, as a personal friend of the brand, be the first to know about unique bags and innovative materials and get lots of love from the F‑Crew.</p> */}
         </>
     )
 }
